@@ -1,0 +1,16 @@
+<header>
+    <nav class="navbar navbar-dark" style="background-color: blueviolet;">
+        <a class="navbar-brand" [routerLink]="['/']">Toro Investimentos</a>
+        <button (click)="logout()" class="btn btn-outline-light" style="margin-right: 10px;">Logout</button>
+    </nav>
+  </header>
+  
+  <section>
+    <main class="container">
+        <router-outlet></router-outlet>
+    </main>
+  </section>
+  
+  <footer class="mt-2 p-2 fixed-bottom text-center">
+    <a href="https://www.toroinvestimentos.com.br" target="_blank">www.toroinvestimentos.com</a>
+  </footer>
