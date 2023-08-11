@@ -1,0 +1,15 @@
+<div class="authentication">
+    <h2 class="text-center">Entrar</h2>
+    <form form [formGroup]="loginForm" (ngSubmit)="login()">
+      <div class="form-group">
+        <label>E-mail</label>
+        <input class="form-control" type="email" name="email" id="email" formControlName="email" required />
+      </div>
+      <div class="form-group">
+        <label>Senha</label>
+        <input class="form-control" type="password" name="password" id="password" formControlName="password" required />
+      </div>
+      <br />
+      <button class="btn btn-primary btn-block" type="submit">Entrar</button>
+    </form>
+  </div>
